@@ -1,0 +1,16 @@
+{
+  "family": "%TASK_FAMILY%",
+  "networkMode": "bridge",
+  "containerDefinitions": [{
+    "memory": 990,
+    "portMappings": [{
+      "hostPort": 80,
+      "containerPort": 8080,
+      "protocol": "tcp"
+    }],
+    "essential": true,
+    "name": "tuyyo-dashboard",
+    "image": "52.210.54.51:5000/%IMAGE_NAME%",
+    "cpu": 0
+  }]
+}
